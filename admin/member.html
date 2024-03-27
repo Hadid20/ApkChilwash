@@ -430,7 +430,6 @@
 
 
     <script>
-        var load = $(window).load(function () { $("#loading").delay(1000).fadeOut("slow"); });
         const modal = document.querySelector('.main-modal');
         const closeButton = document.querySelectorAll('.modal-close');
 
@@ -448,10 +447,7 @@
         }
 
         for (let i = 0; i < closeButton.length; i++) {
-
-            const elements = closeButton[i];
-
-            elements.onclick = (e) => modalClose();
+            const elements = closeButton[i]; elements.onclick = (e) => modalClose();
 
             modal.style.display = 'none';
 
